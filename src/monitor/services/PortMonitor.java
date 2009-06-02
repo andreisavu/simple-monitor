@@ -47,7 +47,6 @@ public class PortMonitor implements Monitor {
         }
     }
 
-
     public void config(Properties c) {
         fail = c.getProperty("fail_message", "PortMonitor FAIL");
         success = c.getProperty("success_message", "PortMonitor SUCCESS");
