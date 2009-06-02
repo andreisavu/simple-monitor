@@ -10,10 +10,6 @@ package monitor.services;
 import java.util.Properties;
 import monitor.MessagesQueue;
 
-/**
- *
- * @author Andrei
- */
 public interface Monitor extends Runnable {
 
     void registerQueue(MessagesQueue m);

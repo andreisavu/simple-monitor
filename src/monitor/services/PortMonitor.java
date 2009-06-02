@@ -3,6 +3,7 @@
  *
  */
 
+
 package monitor.services;
 
 import java.io.IOException;
@@ -50,9 +51,9 @@ public class PortMonitor implements Monitor {
     public void config(Properties c) {
         fail = c.getProperty("fail_message", "PortMonitor FAIL");
         success = c.getProperty("success_message", "PortMonitor SUCCESS");
-        port = Integer.parseInt(c.getProperty("port", "80"));
+        port = Integer.parseInt(c.getProperty("port"));
+        host = c.getProperty("host");
         checkInterval = Integer.parseInt(c.getProperty("check_interval", "2000"));
-        host = c.getProperty("host", "127.0.0.1");
     }
     
 }
