@@ -1,0 +1,15 @@
+
+Simple service monitor software with sms notifications
+
+This is generic framework designed to execute monitoring threads
+and send failure and success notitifaction using a GSM modem phone.
+
+Requirements
+
+JavaComm: http://smslib.googlecode.com/files/javacomm20-win32.zip
+A GSM phone & drivers
+
+This application uses SmsLib (http://code.google.com/p/smslib/)
+
+I have no plans to extend the application in the near future. 
+If you need more functionality fork the source code and have fun!
