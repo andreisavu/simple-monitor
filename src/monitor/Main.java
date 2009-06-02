@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import monitor.services.Monitor;
 
@@ -76,7 +75,7 @@ public class Main {
         }
 
         log.info("Starting all monitors ....");
-        pool = (ThreadPoolExecutor) Executors.newFixedThreadPool(monitors.size()+1);
+        pool = (ThreadPoolExecutor) Executors.newFixedThreadPool(monitors.size());
         for(Monitor m : monitors) {
             pool.execute(m);
         }
