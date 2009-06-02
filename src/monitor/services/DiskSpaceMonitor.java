@@ -31,6 +31,8 @@ public class DiskSpaceMonitor implements Monitor {
         while(true) {
             /**
              * @todo: get disk usage and check limit
+             *
+             * http://stackoverflow.com/questions/47177/how-to-monitor-the-computers-cpu-memory-and-disk-usage-in-java
              */
             try {
                 Thread.sleep(checkInterval);
