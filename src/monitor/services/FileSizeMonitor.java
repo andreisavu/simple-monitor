@@ -5,7 +5,6 @@ package monitor.services;
 
 import java.io.File;
 import java.util.Properties;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import monitor.MessagesQueue;
 
@@ -23,8 +22,8 @@ public class FileSizeMonitor implements Monitor {
     }
 
     public void config(Properties c) {
-        fail = c.getProperty("fail_message", "PortMonitor FAIL");
-        success = c.getProperty("success_message", "PortMonitor SUCCESS");
+        fail = c.getProperty("fail_message", "FileSizeMonitor FAIL");
+        success = c.getProperty("success_message", "FileSizeMonitor SUCCESS");
         checkInterval = Integer.parseInt(c.getProperty("check_interval", "2000"));
         maxFileSize = Integer.parseInt(c.getProperty("max_size", "2000"));
         path = c.getProperty("path", "access.log");
